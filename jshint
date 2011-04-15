@@ -1,0 +1,6 @@
+#!/bin/sh
+
+alias jsc=/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources/jsc
+JSHINT_PATH="`dirname "$0"`"
+
+jsc "$JSHINT_PATH/jshint.js" "$JSHINT_PATH/jshint.jsc.js" -- "`cat $1`"
