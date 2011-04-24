@@ -8,21 +8,26 @@
     quit();
   }
   var
-    result = JSHINT(source),
     errors = [],
     error = {},
-    i;
+    i,
+    quantity,
+    plural,
+    result = JSHINT(source);
 
   if (result) {
-    print('No errors.');
+    print('JSHint found no errors.');
   }
   else {
-    print((errors.length + 1) + ' errors');
     errors = JSHINT.data().errors;
+    quantity = errors.length + 1;
+    if (quantity > 1) {
+      plural = 's';
+    }
+    print('JSHint found ' + quantity + ' error' + plural + ':');
     for (i = 0; i < errors.length; i += 1) {
       error = errors[i];
-      print('Line ' + error.line + ', Column ' + error.character + ': ' + error.reason);
-      print(error.evidence.trim());
+      print(error.line + ',' + error.character + ': ' + error.reason + ' "' + (error.evidence || '').replace(/^\s+|\s+$/, "") + '"');
     }
   }
   quit();
