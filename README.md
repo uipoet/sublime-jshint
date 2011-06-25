@@ -7,7 +7,7 @@ and for windows %APPDATA%\Sublime Text 2\Packages\JSHint
 
 This version contains a Windows and OSX jshint.sublime-build file
 
-I recommend deleting and renaming the ones that applies to you.
+I recommend deleting and renaming the ones that applie to you.
 
 Usage
 =====
