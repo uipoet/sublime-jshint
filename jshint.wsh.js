@@ -108,6 +108,7 @@
 			script = null;
 		}
 	} else {
+		var path = script
 		script = readFile(script);
 	}
 
@@ -147,6 +148,7 @@
 
 	var data = JSHINT.data();
 	var lines = [];
+	lines.push('File "' + path + '"');
 
 	for (var formatter in formatters) {
 		if (data[formatter]) {

@@ -6,6 +6,7 @@
   
   "windows": {
   	"cmd": ["$packages/JSHint/jshint.bat", "$file"],
-    "file_regex": "^\\s+[0-9]+\\s+([^:]+):([0-9]+),"
+  	"file_regex": "File \"(...*?)\"",
+    "line_regex": "^Line ([0-9]*) character ([0-9]*)"
   }
 }
