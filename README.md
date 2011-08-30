@@ -5,13 +5,11 @@ Check out this repository to ~/Application\ Support/Sublime\ Text\ 2/Packages/JS
 
 and for windows %APPDATA%\Sublime Text 2\Packages\JSHint
 
-This version contains a Windows and OSX jshint.sublime-build file
-
-I recommend deleting and renaming the ones that applie to you.
 
 Usage
 =====
-Command-b on any JavaScript file will run JSHint on it.
+Command-b or f7 on any JavaScript file will run JSHint on it.
+
 
 Updating
 ========
