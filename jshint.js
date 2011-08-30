@@ -154,62 +154,61 @@
  evil: true, nomen: false, onevar: false, regexp: false, strict: true, boss: true
 */
 
-/*members "\b", "\t", "\n", "\f", "\r", "!=", "!==", "\"", "%",
- "(begin)", "(breakage)", "(context)", "(error)", "(global)",
- "(identifier)", "(last)", "(line)", "(loopage)", "(name)", "(onevar)",
- "(params)", "(scope)", "(statement)", "(verb)", "*", "+", "++", "-",
- "--", "\/", "<", "<=", "==", "===", ">", ">=", $, $$, $A, $F, $H, $R, $break,
- $continue, $w, Abstract, Ajax, __filename, __dirname, ActiveXObject, Array,
- ArrayBuffer, ArrayBufferView, Autocompleter, Assets, Boolean, Builder,
- Buffer, Browser, COM, CScript, Canvas, CustomAnimation, Class, Control,
- Chain, Color, Cookie, Core, DataView, Date, Debug, Draggable, Draggables,
- Droppables, Document, DomReady, DOMReady, Drag, E, Enumerator, Enumerable,
- Element, Elements, Error, Effect, EvalError, Event, Events, FadeAnimation,
- Field, Flash, Float32Array, Float64Array, Form, FormField, Frame, Function,
- Fx, Group, Hash, HotKey, HTMLElement, HtmlTable, Iframe, IframeShim, Image,
- Int16Array, Int32Array, Int8Array, Insertion, InputValidator, JSON, Keyboard,
- Locale, LN10, LN2, LOG10E, LOG2E, MAX_VALUE, MIN_VALUE, Mask, Math, MenuItem,
- MoveAnimation, MooTools, Native, NEGATIVE_INFINITY, Number, Object,
- ObjectRange, Option, Options, OverText, PI, POSITIVE_INFINITY,
- PeriodicalExecuter, Point, Position, Prototype, RangeError, Rectangle,
- ReferenceError, RegExp, ResizeAnimation, Request, RotateAnimation, SQRT1_2,
- SQRT2, ScrollBar, Scriptaculous, Scroller, Slick, Slider, Selector, String,
- Style, SyntaxError, Sortable, Sortables, SortableObserver, Sound, Spinner,
- System, Swiff, Text, TextArea, Template, Timer, Tips, Type, TypeError,
- Toggle, Try, URI, URIError, URL, VBArray, WScript, Web, Window, XMLDOM,
- XMLHttpRequest, XPathEvaluator, XPathException, XPathExpression,
- XPathNamespace, XPathNSResolver, XPathResult, "\\", a, addEventListener,
- address, alert,  apply, applicationCache, arguments, arity, asi, b, bitwise,
- block, blur, boolOptions, boss, browser, c, call, callee, caller, cases,
- charAt, charCodeAt, character, clearInterval, clearTimeout, close, closed,
- closure, comment, condition, confirm, console, constructor, content, couch,
- create, css, curly, d, data, datalist, dd, debug, decodeURI,
- decodeURIComponent, defaultStatus, defineClass, deserialize, devel,
- document, edition, else, emit, encodeURI, encodeURIComponent, entityify,
- eqeqeq, eqnull, errors, es5, escape, eval, event, evidence, evil, ex,
- exception, exec, exps, expr, exports, FileReader, first, floor, focus,
+/*members "\b", "\t", "\n", "\f", "\r", "!=", "!==", "\"", "%", "(begin)",
+ "(breakage)", "(context)", "(error)", "(global)", "(identifier)", "(last)",
+ "(line)", "(loopage)", "(name)", "(onevar)", "(params)", "(scope)",
+ "(statement)", "(verb)", "*", "+", "++", "-", "--", "\/", "<", "<=", "==",
+ "===", ">", ">=", $, $$, $A, $F, $H, $R, $break, $continue, $w, Abstract, Ajax,
+ __filename, __dirname, ActiveXObject, Array, ArrayBuffer, ArrayBufferView,
+ Autocompleter, Assets, Boolean, Builder, Buffer, Browser, COM, CScript, Canvas,
+ CustomAnimation, Class, Control, Chain, Color, Cookie, Core, DataView, Date,
+ Debug, Draggable, Draggables, Droppables, Document, DomReady, DOMReady, Drag,
+ E, Enumerator, Enumerable, Element, Elements, Error, Effect, EvalError, Event,
+ Events, FadeAnimation, Field, Flash, Float32Array, Float64Array, Form,
+ FormField, Frame, Function, Fx, GetObject, Group, Hash, HotKey, HTMLElement,
+ HtmlTable, Iframe, IframeShim, Image, Int16Array, Int32Array, Int8Array,
+ Insertion, InputValidator, JSON, Keyboard, Locale, LN10, LN2, LOG10E, LOG2E,
+ MAX_VALUE, MIN_VALUE, Mask, Math, MenuItem, MoveAnimation, MooTools, Native,
+ NEGATIVE_INFINITY, Number, Object, ObjectRange, Option, Options, OverText, PI,
+ POSITIVE_INFINITY, PeriodicalExecuter, Point, Position, Prototype, RangeError,
+ Rectangle, ReferenceError, RegExp, ResizeAnimation, Request, RotateAnimation,
+ SQRT1_2, SQRT2, ScrollBar, ScriptEngine, ScriptEngineBuildVersion,
+ ScriptEngineMajorVersion, ScriptEngineMinorVersion, Scriptaculous, Scroller,
+ Slick, Slider, Selector, String, Style, SyntaxError, Sortable, Sortables,
+ SortableObserver, Sound, Spinner, System, Swiff, Text, TextArea, Template,
+ Timer, Tips, Type, TypeError, Toggle, Try, URI, URIError, URL, VBArray, WSH,
+ WScript, Web, Window, XMLDOM, XMLHttpRequest, XPathEvaluator, XPathException,
+ XPathExpression, XPathNamespace, XPathNSResolver, XPathResult, "\\", a,
+ addEventListener, address, alert, apply, applicationCache, arguments, arity,
+ asi, b, bitwise, block, blur, boolOptions, boss, browser, c, call, callee,
+ caller, cases, charAt, charCodeAt, character, clearInterval, clearTimeout,
+ close, closed, closure, comment, condition, confirm, console, constructor,
+ content, couch, create, css, curly, d, data, datalist, dd, debug, decodeURI,
+ decodeURIComponent, defaultStatus, defineClass, deserialize, devel, document,
+ dojo, dijit, dojox, define, edition, else, emit, encodeURI, encodeURIComponent,
+ entityify, eqeqeq, eqnull, errors, es5, escape, eval, event, evidence, evil,
+ ex, exception, exec, exps, expr, exports, FileReader, first, floor, focus,
  forin, fragment, frames, from, fromCharCode, fud, funct, function, functions,
  g, gc, getComputedStyle, getRow, GLOBAL, global, globals, globalstrict,
- hasOwnProperty, help, history, i, id, identifier, immed, implieds,
- include, indent, indexOf, init, ins, instanceOf, isAlpha,
- isApplicationRunning, isArray, isDigit, isFinite, isNaN, join, jshint,
- JSHINT, json, jquery, jQuery, keys, label, labelled, last, laxbreak,
- latedef, lbp, led, left, length, line, load, loadClass, localStorage,
- location, log, loopfunc, m, match, maxerr, maxlen, member,message, meta,
- module, moveBy, moveTo, mootools, name, navigator, new, newcap, noarg,
- node, noempty, nomen, nonew, nud, onbeforeunload, onblur, onerror, onevar,
- onfocus, onload, onresize, onunload, open, openDatabase, openURL, opener,
- opera, outer, param, parent, parseFloat, parseInt, passfail, plusplus,
- predef, print, process, prompt, prototype, prototypejs, push, quit, range,
- raw, reach, reason, regexp, readFile, readUrl, removeEventListener, replace,
- report, require, reserved, resizeBy, resizeTo, resolvePath, resumeUpdates,
- respond, rhino, right, runCommand, scroll, screen, scrollBy, scrollTo,
- scrollbar, search, seal, send, serialize, setInterval, setTimeout, shift,
- slice, sort,spawn, split, stack, status, start, strict, sub, substr, supernew,
- shadow, supplant, sum, sync, test, toLowerCase, toString, toUpperCase, toint32,
- token, top, type, typeOf, Uint16Array, Uint32Array, Uint8Array, undef,
- unused, urls, value, valueOf, var, version, WebSocket, white, window, Worker
-*/
+ hasOwnProperty, help, history, i, id,
+ identifier, immed, implieds, include, indent, indexOf, init, ins, instanceOf,
+ isAlpha, isApplicationRunning, isArray, isDigit, isFinite, isNaN, join, jshint,
+ JSHINT, json, jquery, jQuery, keys, label, labelled, last, lastsemic, laxbreak,
+ latedef, lbp, led, left, length, line, load, loadClass, localStorage, location,
+ log, loopfunc, m, match, maxerr, maxlen, member,message, meta, module, moveBy,
+ moveTo, mootools, name, navigator, new, newcap, noarg, node, noempty, nomen,
+ nonew, nud, onbeforeunload, onblur, onerror, onevar, onfocus, onload, onresize,
+ onunload, open, openDatabase, openURL, opener, opera, outer, param, parent,
+ parseFloat, parseInt, passfail, plusplus, predef, print, process, prompt,
+ prototype, prototypejs, push, quit, range, raw, reach, reason, regexp,
+ readFile, readUrl, regexdash, removeEventListener, replace, report, require,
+ reserved, resizeBy, resizeTo, resolvePath, resumeUpdates, respond, rhino, right,
+ runCommand, scroll, screen, scripturl, scrollBy, scrollTo, scrollbar, search, seal, send,
+ serialize, setInterval, setTimeout, shift, slice, sort,spawn, split, stack,
+ status, start, strict, sub, substr, supernew, shadow, supplant, sum, sync,
+ test, toLowerCase, toString, toUpperCase, toint32, token, top, trailing, type,
+ typeOf, Uint16Array, Uint32Array, Uint8Array, undef, unused, urls, value, valueOf,
+ var, version, WebSocket, white, window, Worker, wsh*/
 
 /*global exports: false */
 
@@ -251,6 +250,7 @@ var JSHINT = (function () {
             curly       : true, // if curly braces around blocks should be required (even in if/for/while)
             debug       : true, // if debugger statements should be allowed
             devel       : true, // if logging globals should be predefined (console, alert, etc.)
+            dojo        : true, // if Dojo Toolkit globals should be predefined
             eqeqeq      : true, // if === should be required
             eqnull      : true, // if == null comparisons should be tolerated
             es5         : true, // if ES5 syntax should be allowed
@@ -273,15 +273,19 @@ var JSHINT = (function () {
             onevar      : true, // if only one var statement per function should be allowed
             passfail    : true, // if the scan should stop on first error
             plusplus    : true, // if increment/decrement should not be allowed
-            prototypejs : true, // if Prototype and Scriptaculous globals shoudl be predefined
+            prototypejs : true, // if Prototype and Scriptaculous globals should be predefined
+            regexdash   : true, // if unescaped last dash (-) inside brackets should be tolerated
             regexp      : true, // if the . should not be allowed in regexp literals
             rhino       : true, // if the Rhino environment globals should be predefined
             undef       : true, // if variables should be declared before used
+            scripturl   : true, // if script-targeted URLs should be tolerated
             shadow      : true, // if variable shadowing should be tolerated
             strict      : true, // require the "use strict"; pragma
             sub         : true, // if all forms of subscript notation are tolerated
             supernew    : true, // if `new function () { ... };` and `new Object;` should be tolerated
-            white       : true  // if strict whitespace rules apply
+            trailing    : true, // if trailing whitespace rules apply
+            white       : true, // if strict whitespace rules apply
+            wsh         : true  // if the Windows Scripting Host environment globals should be predefined
         },
 
 // browser contains a set of global names which are commonly provided by a
@@ -373,12 +377,20 @@ var JSHINT = (function () {
         },
 
         devel = {
-            alert           : false,
-            confirm         : false,
-            console         : false,
-            Debug           : false,
-            opera           : false,
-            prompt          : false
+            alert   : false,
+            confirm : false,
+            console : false,
+            Debug   : false,
+            opera   : false,
+            prompt  : false
+        },
+
+        dojo = {
+            dojo      : false,
+            dijit     : false,
+            dojox     : false,
+            define    : false,
+            "require" : false
         },
 
         escapes = {
@@ -604,6 +616,19 @@ var JSHINT = (function () {
         urls,
         warnings,
 
+        wsh = {
+            ActiveXObject             : true,
+            Enumerator                : true,
+            GetObject                 : true,
+            ScriptEngine              : true,
+            ScriptEngineBuildVersion  : true,
+            ScriptEngineMajorVersion  : true,
+            ScriptEngineMinorVersion  : true,
+            VBArray                   : true,
+            WSH                       : true,
+            WScript                   : true
+        },
+
 // Regular expressions. Some of these are stupidly long.
 
 // unsafe comment or string
@@ -745,6 +770,9 @@ var JSHINT = (function () {
         if (option.devel)
             combine(predefined, devel);
 
+        if (option.dojo)
+            combine(predefined, dojo);
+
         if (option.browser)
             combine(predefined, browser);
 
@@ -754,20 +782,24 @@ var JSHINT = (function () {
         if (option.mootools)
             combine(predefined, mootools);
 
-        if (option.globalstrict)
+        if (option.wsh)
+            combine(predefined, wsh);
+
+        if (option.globalstrict && option.strict !== false)
             option.strict = true;
     }
 
 
 // Produce an error warning.
 
-    function quit(m, l, ch) {
+    function quit(message, line, chr) {
+        var percentage = Math.floor((line / lines.length) * 100);
+
         throw {
             name: 'JSHintError',
-            line: l,
-            character: ch,
-            message: m + " (" + Math.floor((l / lines.length) * 100) +
-                    "% scanned)."
+            line: line,
+            character: chr,
+            message: message + " (" + percentage + "% scanned)."
         };
     }
 
@@ -856,7 +888,7 @@ var JSHINT = (function () {
 
             // Check for trailing whitespaces
             tw = s.search(/\s+$/);
-            if (option.white && ~tw)
+            if (option.trailing && ~tw && !~s.search(/^\s+$/))
                 warningAt("Trailing whitespace.", line, tw);
 
             return true;
@@ -876,7 +908,7 @@ var JSHINT = (function () {
             }
             t = Object.create(t);
             if (type === '(string)' || type === '(range)') {
-                if (jx.test(value)) {
+                if (!option.scripturl && jx.test(value)) {
                     warningAt("Script URL.", line, from);
                 }
             }
@@ -1307,7 +1339,7 @@ klass:                                  do {
                                                 }
                                                 break;
                                             case ']':
-                                                if (!q) {
+                                                if (!q && !option.regexdash) {
                                                     warningAt("Unescaped '{a}'.",
                                                             line, from + l - 1, '-');
                                                 }
@@ -2127,7 +2159,7 @@ loop:   for (;;) {
                 warning("Do not use 'new' for side effects.");
             }
             if (nexttoken.id !== ';') {
-                if (!option.asi) {
+                if (!option.asi && !(option.lastsemic && nexttoken.id == '}' && nexttoken.line == token.line)) {
                     warningAt("Missing semicolon.", token.line, token.from + token.value.length);
                 }
             } else {
@@ -2517,7 +2549,7 @@ loop:   for (;;) {
         if (left && right && left.id === '(string)' && right.id === '(string)') {
             left.value += right.value;
             left.character = right.character;
-            if (jx.test(left.value)) {
+            if (!option.scripturl && jx.test(left.value)) {
                 warning("JavaScript URL.", left);
             }
             return left;
