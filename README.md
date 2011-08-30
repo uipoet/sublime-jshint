@@ -5,11 +5,11 @@ Check out this repository to:
 
 Mac OS X:
 
-    ~/Application\ Support/Sublime\ Text\ 2/Packages/JSHint
+    git clone git://github.com/uipoet/sublime-jshint.git ~/Application\ Support/Sublime\ Text\ 2/Packages/JSHint
     
 Windows:
 
-    %APPDATA%\Sublime Text 2\Packages\JSHint
+    git clone git://github.com/uipoet/sublime-jshint.git %APPDATA%\Sublime Text 2\Packages\JSHint
 
 Usage
 =====
