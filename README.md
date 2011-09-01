@@ -5,7 +5,7 @@ Check out this repository to:
 
 Mac OS X:
 
-    git clone git://github.com/uipoet/sublime-jshint.git ~/Application\ Support/Sublime\ Text\ 2/Packages/JSHint
+    git clone git://github.com/uipoet/sublime-jshint.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/JSHint
     
 Windows:
 
