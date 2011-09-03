@@ -13,10 +13,27 @@ Windows:
 
 Usage
 =====
-Command-b or f7 on any JavaScript file will run JSHint on it.
+With a JavaScript file active in Sublime Text 2:
 
+Mac OS X:
+
+    command-b
+    
+Windows or Mac OS X:
+    
+    F7
+    
+Next error:
+
+    F4
+    
+Previous error:
+
+    shift-F4
 
 Updating
 ========
+Inside the package:
+
     git pull
-inside the package anytime for the latest
+
