@@ -1,38 +1,24 @@
-Installation
-============
-
+#Installation
 Check out this repository to:
 
-Mac OS X:
-
+##Mac OS X:
     git clone git://github.com/uipoet/sublime-jshint.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/JSHint
-    
-Windows:
 
+##Windows:
     git clone git://github.com/uipoet/sublime-jshint.git %APPDATA%\Sublime Text 2\Packages\JSHint
 
-Usage
-=====
+#Check file:
 With a JavaScript file active in Sublime Text 2:
 
-Mac OS X:
+`F7` or `command-B` (Mac)
 
-    command-b
-    
-Windows or Mac OS X:
-    
-    F7
-    
-Next error:
+##Next error in the file:
+`F4`
 
-    F4
-    
-Previous error:
+##Previous error in the file:
+`shift-F4`
 
-    shift-F4
-
-Updating
-========
+##Updating
 Inside the package:
 
     git pull

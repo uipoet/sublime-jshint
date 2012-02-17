@@ -1,12 +1,20 @@
 {
-  "cmd": ["$packages/JSHint/jshint", "$file"],
-  "file_regex": "^\\s+[0-9]+\\s+([^:]+):([0-9]+),",
-  "line_regex": "([0-9]+),[0-9]+",
+  "cmd": ["jshint", "$file"],
+  "file_regex": "(.+js).+((?<=line\\s)\\d+).+((?<=col\\s)\\d+),\\s(.+$)",
   "selector": "source.js",
-  
-  "windows": {
-  	"cmd": ["$packages/JSHint/jshint.bat", "$file"],
-  	"file_regex": "File \"(...*?)\"",
-    "line_regex": "^Line ([0-9]*) character ([0-9]*)"
+
+  "osx": {
+    "path": "/usr/local/bin"
   }
+
+  /*
+  , "linux": {
+    "path": ""
+  }
+  */
+
+  /*
+  , "windows": {
+    "path": ""
+  }*/
 }
