@@ -1,4 +1,6 @@
 #Installation
+    npm install jshint -g
+
 Check out this repository to:
 
 ##Mac OS X:
