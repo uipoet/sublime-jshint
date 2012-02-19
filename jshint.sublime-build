@@ -5,16 +5,13 @@
 
   "osx": {
     "path": "/usr/local/bin"
-  }
+  },
 
-  /*
-  , "linux": {
-    "path": ""
-  }
-  */
+  "linux": {
+    "path": "/usr/local/bin"
+  }/*,
 
-  /*
-  , "windows": {
+  "windows": {
     "path": ""
   }*/
 }
