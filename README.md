@@ -24,4 +24,4 @@ Install [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild)
 
 **Note:** The `control`-`J` shortcut changes the Build System on the current file to JSHint, then Builds to run JSHint on the file and output any errors for jumping to within the file. You could alternatively set the Build System set to Automatic and `command`-`B`/`control`-`B`/`F7`, but only on files that end with .js.
 
-**Windows:** The build script assumes that the path to node is in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs
+**Windows:** The build script assumes that the path to node is in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs`
