@@ -9,9 +9,9 @@
 
   "linux": {
     "path": "/usr/local/bin"
-  }/*,
+  },
 
   "windows": {
-    "path": ""
-  }*/
+    "cmd": ["jshint.cmd", "$file"]
+  }
 }
