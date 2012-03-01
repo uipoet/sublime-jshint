@@ -1,0 +1,17 @@
+{
+  "cmd": ["jshint", "$file"],
+  "file_regex": "(.+js).+((?<=line\\s)\\d+).+((?<=col\\s)\\d+),\\s(.+$)",
+  "selector": "source.js",
+
+  "osx": {
+    "path": "/usr/local/bin"
+  },
+
+  "linux": {
+    "path": "/usr/local/bin"
+  },
+
+  "windows": {
+    "cmd": ["jshint.cmd", "$file"]
+  }
+}
