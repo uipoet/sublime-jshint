@@ -2,7 +2,7 @@
 
 The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the best text editor: [Sublime Text 2](http://www.sublimetext.com/2)
 
-##Install
+##Install with Package Control
 
 Prerequisites:
 
@@ -10,6 +10,8 @@ Prerequisites:
 - npm 1.1.x `curl http://npmjs.org/install.sh | sh`
 - jshint 0.5.x `npm install -g jshint`
 - [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
+
+Steps in Sublime Text 2:
 
 1. `command`-`shift`-`P` *or `control`-`shift`-`P` in Linux/Windows*
 2. type `install p`, select `Package Control: Install Package`
