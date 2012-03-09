@@ -4,7 +4,12 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 ##Install
 
-Prerequisites: `npm install jshint -g` and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
+Prerequisites:
+
+- node 0.6.x
+- npm 1.1.x `curl http://npmjs.org/install.sh | sh`
+- jshint 0.5.x `npm install -g jshint`
+- [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
 
 1. `command`-`shift`-`P` *or `control`-`shift`-`P` in Linux/Windows*
 2. type `install p`, select `Package Control: Install Package`
@@ -24,4 +29,6 @@ Install [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild)
 
 **Note:** The `control`-`J` shortcut changes the Build System on the current file to JSHint, then Builds to run JSHint on the file and output any errors for jumping to within the file. You could alternatively set the Build System set to Automatic and `command`-`B`/`control`-`B`/`F7`, but only on files that end with .js.
 
-**Windows:** The build script assumes that the path to node is in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs`
+**Mac OS X:** Install node with homebrew `brew update` `brew install node`. Make sure you have either the latest Command Line Tools or Xcode before installing homebrew.
+
+**Windows:** Node should be in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs`
