@@ -1,0 +1,37 @@
+{
+  "name": "sublime-jshint",
+  "version": "0.0.3",
+
+  "description": "the best JavaScript syntax checker for the best text editor",
+  "keywords": ["sublime", "text", "2", "jshint"],
+
+  "homepage": "https://github.com/uipoet/sublime-jshint/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ninja/sublime-jshint.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/ninja/sublime-jshint/issues"
+  },
+
+  "author": {
+    "name": "Jamie R. Hoover",
+    "email": "dont.tase@me.com",
+    "url": "http://uipoet.com"
+  },
+
+  "engines": {
+    "node": "0.6 || 0.7 || 0.8",
+    "npm": "1"
+  },
+  "dependencies": {
+    "jshint": "0.5.x"
+  },
+
+  "licenses": [
+    {
+      "type": "Apache 2",
+      "url": "http://github.com/ninja/ui/raw/master/LICENSE.txt"
+    }
+  ]
+}

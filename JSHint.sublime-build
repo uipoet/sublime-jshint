@@ -1,6 +1,9 @@
 {
-  "cmd": ["jshint", "$file"],
-  "file_regex": "(.+js).+((?<=line\\s)\\d+).+((?<=col\\s)\\d+),\\s(.+$)",
+  "cmd": ["${packages}/JSHint/node_modules/.bin/jshint", "$file", "--reporter", "${packages}/JSHint/reporter.js"],
+
+  "file_regex": "file:\\s(.+)\\]",
+  "line_regex": "(\\d+),(\\d+)",
+
   "selector": "source.js",
 
   "osx": {
