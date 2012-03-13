@@ -2,7 +2,7 @@
 
 The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the best text editor: [Sublime Text 2](http://www.sublimetext.com/2)
 
-**Prerequisites:** node 0.6.x, npm 1.1.x `curl http://npmjs.org/install.sh | sh`, jshint 0.5.x `npm install -g jshint` and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
+**Prerequisites:** node 0.6.x and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
 
 **Mac OS X:** Install node with homebrew `brew update` `brew install node`. Make sure you have either the latest Command Line Tools or Xcode before installing homebrew.
 
