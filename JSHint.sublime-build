@@ -1,5 +1,5 @@
 {
-  "cmd": ["${packages}/JSHint/node_modules/.bin/jshint", "$file", "--reporter", "${packages}/JSHint/reporter.js"],
+  "cmd": ["${packages}/JSHint/node_modules/jshint/bin/hint", "$file", "--reporter", "${packages}/JSHint/reporter.js"],
 
   "file_regex": "file:\\s(.+)\\]",
   "line_regex": "(\\d+),(\\d+)",
