@@ -2,13 +2,17 @@
 
 The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the best text editor: [Sublime Text 2](http://www.sublimetext.com/2)
 
-**Prerequisites:** node 0.6.x and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
+**Prerequisites:** [node-jshint](https://github.com/jshint/node-jshint) and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
 
 **Mac OS X:** Install node with homebrew `brew update` `brew install node`. Make sure you have either the latest Command Line Tools or Xcode before installing homebrew.
 
 **Windows:** Node should be in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs`
 
-##Install with Package Control
+##Install node-jshint with npm
+
+    npm install -g jshint
+
+##Install JSHint with Package Control in Sublime Text 2
 
 1. `command`-`shift`-`P` *or `control`-`shift`-`P` in Linux/Windows*
 2. type `install p`, select `Package Control: Install Package`

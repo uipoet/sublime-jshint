@@ -1,6 +1,6 @@
 {
   "name": "sublime-jshint",
-  "version": "0.0.3",
+  "version": "0.3.2",
 
   "description": "the best JavaScript syntax checker for the best text editor",
   "keywords": ["sublime", "text", "2", "jshint"],
@@ -25,7 +25,7 @@
     "npm": "1"
   },
   "dependencies": {
-    "jshint": "0.5.x"
+    "jshint": "0.6.x"
   },
 
   "licenses": [

@@ -1,9 +1,9 @@
 {
   "selector": "source.js",
 
-  "path": "/usr/local/bin:${packages}/JSHint/node_modules/jshint/bin",
+  "path": "/usr/local/bin",
 
-  "cmd": ["${packages}/JSHint/node_modules/jshint/bin/hint", "$file", "--reporter", "${packages}/JSHint/reporter.js"],
+  "cmd": ["jshint", "$file", "--reporter", "${packages}/JSHint/reporter.js"],
 
   "file_regex": "file:\\s(.+)\\]",
   "line_regex": "(\\d+),(\\d+)",
