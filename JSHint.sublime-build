@@ -9,6 +9,6 @@
   "line_regex": "(\\d+),(\\d+)",
 
   "windows": {
-    "cmd": ["jshint.cmd", "$file"]
+    "cmd": ["jshint.cmd", "$file", "--reporter", "${packages}/JSHint/reporter.js"]
   }
 }
