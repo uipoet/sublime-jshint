@@ -1,12 +1,14 @@
 {
   "selector": "source.js",
 
-  "path": "/usr/local/bin",
-
   "cmd": ["jshint", "$file", "--reporter", "${packages}/JSHint/reporter.js"],
 
   "file_regex": "file:\\s(.+)\\]",
   "line_regex": "(\\d+),(\\d+)",
+
+  "osx": {
+    "path": "/usr/local/bin"
+  },
 
   "windows": {
     "cmd": ["jshint.cmd", "$file", "--reporter", "${packages}/JSHint/reporter.js"]
