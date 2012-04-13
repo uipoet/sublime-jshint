@@ -4,7 +4,9 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Prerequisites:** [node-jshint](https://github.com/jshint/node-jshint) and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
 
-**Mac OS X:** Install node with homebrew `brew update` `brew install node`. Make sure you have either the latest Command Line Tools or Xcode before installing homebrew.
+**Mac OS X:** Install node with homebrew `brew update` `brew install node`. Make sure you have either the latest Command Line Tools or Xcode before installing homebrew. The path to jshint is hardcoded in this plugin as `/usr/local/bin/jshint`.
+
+**Linux:** Make sure jshint is in your environment path. 
 
 **Windows:** Node should be in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs`
 
