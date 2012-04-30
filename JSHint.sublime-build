@@ -1,9 +1,7 @@
 {
   "selector": "source.js",
 
-  "shell": true,
-
-  "cmd": ["jshint \"${file}\" --reporter \"${packages}/JSHint/reporter.js\""],
+  "cmd": ["jshint", "$file", "--reporter", "$packages/JSHint/reporter.js"],
 
   "file_regex": "file:\\s(.+)\\]",
   "line_regex": "(\\d+),(\\d+)",
@@ -13,6 +11,6 @@
   },
 
   "windows": {
-    "cmd": ["jshint \"${file}\" --reporter \"${packages}\\JSHint\\reporter.js\""]
+    "cmd": ["jshint.cmd", "$file", "--reporter", "$packages\\JSHint\\reporter.js"]
   }
 }
