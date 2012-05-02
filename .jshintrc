@@ -13,7 +13,6 @@
   "noempty": true,
   "nonew": true,
   "plusplus": true,
-  "regexp": false, // This is only a build script. Security is not an issue.
   "undef": true,
   "strict": true,
   "trailing": true,
