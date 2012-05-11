@@ -4,11 +4,11 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Prerequisites:** [node-jshint](https://github.com/jshint/node-jshint) and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
 
-**Mac OS X:** Install node with homebrew `brew update` `brew install node`. Make sure you have either the latest Command Line Tools or Xcode before installing homebrew. The path to jshint is hardcoded in this plugin as `/usr/local/bin/jshint`.
+**Mac OS X:** Installing node with homebrew or macports is assumed. The path to jshint is hardcoded in this plugin as `/usr/local/bin:/opt/local/bin`. There is no reliable way to get the path from your environment.
 
-**Linux:** Make sure jshint is in your environment path. 
+**Linux:** Make sure jshint is in your environment path.
 
-**Windows:** Node should be in your `CLASSPATH` in environment variables, `C:\Program Files (x86)\nodejs`
+**Windows:** Installing node with the Windows Installer from nodejs.org is assumed. **Known Bug:** Sublime Text 2 for Windows doesn't show the console output. As a temporary hack, you can output to a file. See issue #23.
 
 ##Install node-jshint with npm
 
@@ -16,7 +16,7 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 ##Install JSHint with Package Control in Sublime Text 2
 
-1. `command`-`shift`-`P` *or `control`-`shift`-`P` in Linux/Windows*
+1. `command`-`shift`-`P` *or* `control`-`shift`-`P` in Linux/Windows*
 2. type `install p`, select `Package Control: Install Package`
 3. type `jshint`, select `JSHint`
 
