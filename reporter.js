@@ -21,7 +21,12 @@ module.exports = {
 
       return stayNumberWang;
     }
-
+    var buffer = '';
+    console.log = function(){
+      var args = Array.prototype.slice.call(arguments);
+      buffer += args.join('');
+      buffer += '\n';
+    }
     console.log('[JSHint file:', file + ']');
 
     results.forEach(function (result) {
@@ -60,7 +65,9 @@ module.exports = {
 
       if (globals) {
         globals.forEach(function (global) {
-          console.log(numberWang(global.line.toString().length + 1), global.line + ',1: \'' + global.name + '\' is an implied global variable.');
+          for (var line in global.line){
+            console.log(numberWang(global.line[line].toString().length + 1), global.line[line] + ',1: \'' + global.name + '\' is an implied global variable.');
+          }
         });
       }
 
@@ -70,5 +77,7 @@ module.exports = {
         });
       }
     }
+    process.stdout.write(buffer);
+    setTimeout('',3000);
   }
 };

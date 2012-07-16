@@ -3,7 +3,7 @@
 
   "cmd": ["jshint", "$file", "--reporter", "$packages/JSHint/reporter.js"],
 
-  "file_regex": "file:\\s(.+)\\]",
+  "file_regex": "file:(.+)\\]",
   "line_regex": "(\\d+),(\\d+)",
 
   "osx": {
