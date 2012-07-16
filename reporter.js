@@ -65,7 +65,9 @@ module.exports = {
 
       if (globals) {
         globals.forEach(function (global) {
-          console.log(numberWang(global.line.toString().length + 1), global.line + ',1: \'' + global.name + '\' is an implied global variable.');
+          for (var line in global.line){
+            console.log(numberWang(global.line[line].toString().length + 1), global.line[line] + ',1: \'' + global.name + '\' is an implied global variable.');
+          }
         });
       }
 
