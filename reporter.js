@@ -21,7 +21,12 @@ module.exports = {
 
       return stayNumberWang;
     }
-
+    var buffer = '';
+    console.log = function(){
+      var args = Array.prototype.slice.call(arguments);
+      buffer += args.join('');
+      buffer += '\n';
+    }
     console.log('[JSHint file:', file + ']');
 
     results.forEach(function (result) {
@@ -70,5 +75,7 @@ module.exports = {
         });
       }
     }
+    process.stdout.write(buffer);
+    setTimeout('',3000);
   }
 };
