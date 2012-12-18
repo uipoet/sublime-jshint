@@ -7,7 +7,7 @@
   "line_regex": "(\\d+),(\\d+)",
 
   "osx": {
-    "path": "/usr/local/bin:/opt/local/bin"
+    "path": "/user/local/share/npm/bin:/usr/local/bin:/opt/local/bin"
   },
 
   "windows": {
