@@ -5,8 +5,8 @@ module.exports = {
   reporter: function (errors, results, done) {
 
     var
-      errorString = 'Error',
-      warningString = 'Warning',
+      errorString = ' Error',
+      warningString = ' Warning',
       file = results[0].file,
       errorLength, warningLength, globals, orphans;
 
@@ -77,6 +77,11 @@ module.exports = {
         });
       }
     }
+
+    if (!errorLength && !errorLength) {
+      console.log('✓ JSHint PASSED! (no Errors or Warnings)');
+    }
+
     process.stdout.write(buffer);
     setTimeout('',3000);
   }
