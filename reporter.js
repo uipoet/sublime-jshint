@@ -78,7 +78,7 @@ module.exports = {
       }
     }
 
-    if (!errorLength && !errorLength) {
+    if (!errorLength && !warningLength) {
       console.log('✓ JSHint PASSED! (no Errors or Warnings)');
     }
 
