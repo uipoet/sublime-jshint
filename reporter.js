@@ -1,13 +1,10 @@
 exports.reporter = function (errors, results) {
   var
-    errorString = ' Error',
-    warningString = ' Warning',
-    file = results[0].file,
-    errorLength, warningLength, globals, orphans;
+    title = 'error';
 
   function numberWang(wangaNumb) {
     var
-      thatsNumberWang = 8 - wangaNumb,
+      thatsNumberWang = 5 - wangaNumb,
       stayNumberWang = '', i;
 
     for (i = 0; i < thatsNumberWang; i += 1) {
@@ -16,64 +13,24 @@ exports.reporter = function (errors, results) {
 
     return stayNumberWang;
   }
-  var buffer = '';
 
-  console.log = function () {
-    var args = Array.prototype.slice.call(arguments);
-    buffer += args.join('');
-    buffer += '\n';
-  };
+  console.info('[JSHint:', results[0].file + ']\n');
 
-  console.log('[JSHint file:', file + ']');
-
-  results.forEach(function (result) {
-
-    globals = result.implieds;
-    orphans = result.unused;
-
-    warningLength = (globals ? globals.length : 0) + (orphans ? orphans.length : 0);
-
-    if (warningLength > 1) {
-      warningString += 's';
+  if (errors.length) {
+    if (errors.length > 1) {
+      title += 's';
     }
 
-  });
+    errors.forEach(function (result) {
+      var
+        error = result.error;
 
-  if (errors) {
-    errorLength = errors.length;
+      console.error(numberWang((error.line + error.character.toString()).length), error.line + ',' + error.character + ':', error.reason);
+    });
 
-    if (errorLength > 0) {
-      if (errorLength > 1) {
-        errorString += 's';
-      }
+    console.error('\n ✗', errors.length, title + ', double-click the line to jump.\n');
 
-      console.log(' ', errorLength, errorString + ':');
-
-      errors.forEach(function (result) {
-        var error = result.error;
-
-        console.log(numberWang((error.line.toString() + error.character.toString()).length), error.line + ',' + error.character + ':', error.reason);
-      });
-    }
+  } else {
+    console.info(' ✓ 0 errors\n');
   }
-
-  if (warningLength > 0) {
-    if (globals) {
-      console.log(' ', globals, warningString + ':');
-
-      globals.forEach(function (global) {
-        for (var line in global.line) {
-          if (global.line) {
-            console.log(numberWang(global.line[line].toString().length + 1), global.line[line] + ',1: \'' + global.name + '\' is an implied global variable.');
-          }
-        }
-      });
-    }
-  }
-
-  if (!errorLength && !warningLength || warningLength === 1) {
-    console.log('✓ JSHint PASSED! (no Errors or Warnings)');
-  }
-
-  process.stdout.write(buffer);
 };
