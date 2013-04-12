@@ -28,9 +28,9 @@ exports.reporter = function (errors, results) {
       console.error(numberWang((error.line + error.character.toString()).length), error.line + ',' + error.character + ':', error.reason);
     });
 
-    console.error('\n ✗', errors.length, title + ', double-click above | F4 (next) | shift-F4 (previous).\n');
+    console.error('\n ✗', errors.length, title + ', double-click above, [F4] for next, [shift-F4] for previous.\n');
 
   } else {
-    console.info(' ✓ 0 errors\n');
+    console.info(' ✓ 0 errors, [esc] to hide.\n');
   }
 };
