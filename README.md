@@ -10,7 +10,7 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Linux:** Make sure jshint is in your environment path.
 
-**Windows:** Installing node with the Windows Installer from nodejs.org is assumed. **Known Bug:** Sublime Text 2 for Windows doesn't show the console output. As a temporary hack, you can output to a file. See issue #23.
+**Windows:** Installing node with the Windows Installer from nodejs.org is assumed.
 
 ##Install node-jshint with npm
 
@@ -18,7 +18,7 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 ##Install JSHint with Package Control in Sublime Text 2
 
-1. `command`-`shift`-`P` *or* `control`-`shift`-`P` in Linux/Windows*
+1. `command`-`shift`-`p` *or* `control`-`shift`-`p` in Linux/Windows
 2. type `install p`, select `Package Control: Install Package`
 3. type `jshint`, select `JSHint`
 
@@ -26,11 +26,11 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 ##Run JSHint on an active JavaScript file in Sublime Text 2
 
-- `control`-`J` *or Tools/Contextual menus or the Command Palette*
+- `control`-`j` *or* `alt`-`j` in Linux/Windows *or* Tools/Contextual menus *or* the Command Palette
 - `F4` jump to next error row/column
 - `shift`-`F4` jump to previous error row-column
 
-**Note:** The `control`-`J` shortcut changes the Build System on the current file to JSHint, then Builds to run JSHint on the file and output any errors for jumping to within the file. You could alternatively set the Build System to Automatic and `command`-`B`/`control`-`B`/`F7`, but only on files that end with .js.
+**Note:** The `control`-`j`/`alt`-`j` shortcut changes the Build System on the current file to JSHint, then Builds to run JSHint on the file and output any errors for jumping to within the file. You could alternatively set the Build System to Automatic and `command`-`b`/`control`-`b`/`F7`, but only on files that end with .js.
 
 ##Run JSHint on save
 
