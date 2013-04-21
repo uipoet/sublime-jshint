@@ -1,6 +1,6 @@
-#JSHint for Sublime Text 2
+#JSHint for Sublime Text
 
-The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the best text editor: [Sublime Text 2](http://www.sublimetext.com/2)
+The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the best text editor: [Sublime Text](http://www.sublimetext.com/2)
 
 ![ScreenShot](https://raw.github.com/uipoet/sublime-jshint/preview/jshint.png)
 
@@ -12,11 +12,13 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Windows:** Installing node with the Windows Installer from nodejs.org is assumed.
 
-##Install node-jshint with npm
+##Install jshint with npm
 
     npm install -g jshint
+    
+**Note:** JSHint will use the first .jshintrc file found traversing from the active file in Sublime Text up to your project's root.
 
-##Install JSHint with Package Control in Sublime Text 2
+##Install JSHint with Package Control in Sublime Text
 
 1. `command`-`shift`-`p` *or* `control`-`shift`-`p` in Linux/Windows
 2. type `install p`, select `Package Control: Install Package`
@@ -24,7 +26,7 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Note:** Without Sublime Package Control, you could manually clone to Packages directory as 'JSHint', exactly.
 
-##Run JSHint on an active JavaScript file in Sublime Text 2
+##Run JSHint on an active JavaScript file in Sublime Text
 
 - `control`-`j` *or* `alt`-`j` in Linux/Windows *or* Tools/Contextual menus *or* the Command Palette
 - `F4` jump to next error row/column
