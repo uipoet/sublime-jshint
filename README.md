@@ -12,21 +12,21 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Windows:** Installing node with the Windows Installer from nodejs.org is assumed.
 
-##Install jshint with npm
+##1. Terminal
 
     npm install -g jshint
     
 **Note:** JSHint will use the first .jshintrc file found traversing from the active file in Sublime Text up to your project's root.
 
-##Install JSHint with Package Control in Sublime Text
+##2. Sublime Text Package Control
 
-1. `command`-`shift`-`p` *or* `control`-`shift`-`p` in Linux/Windows
-2. type `install p`, select `Package Control: Install Package`
-3. type `jshint`, select `JSHint`
+- `command`-`shift`-`p` *or* `control`-`shift`-`p` in Linux/Windows
+- type `install p`, select `Package Control: Install Package`
+- type `jshint`, select `JSHint`
 
 **Note:** Without Sublime Package Control, you could manually clone to Packages directory as 'JSHint', exactly.
 
-##Run JSHint on an active JavaScript file in Sublime Text
+##3. JSHint an active JavaScript file
 
 - `control`-`j` *or* `alt`-`j` in Linux/Windows *or* Tools/Contextual menus *or* the Command Palette
 - `F4` jump to next error row/column
@@ -34,6 +34,6 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Note:** The `control`-`j`/`alt`-`j` shortcut changes the Build System on the current file to JSHint, then Builds to run JSHint on the file and output any errors for jumping to within the file. You could alternatively set the Build System to Automatic and `command`-`b`/`control`-`b`/`F7`, but only on files that end with .js.
 
-##Run JSHint on save
+##JSHint on save
 
 Install [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild)
