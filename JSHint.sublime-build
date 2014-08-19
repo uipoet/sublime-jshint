@@ -1,7 +1,7 @@
 {
   "selector": "source.js",
 
-  "cmd": ["jshint", "$file", "--reporter", "$packages/JSHint/reporter.js"],
+  "cmd": ["jshint", "$file", "--reporter", "$packages/sublime-jshint/reporter.js"],
 
   "file_regex": "JSHint: (.+)\\]",
   "line_regex": "(\\d+),(\\d+): (.*)$",
@@ -11,6 +11,6 @@
   },
 
   "windows": {
-    "cmd": ["jshint.cmd", "$file", "--reporter", "$packages\\JSHint\\reporter.js"]
+    "cmd": ["jshint.cmd", "$file", "--reporter", "$packages\\sublime-jshint\\reporter.js"]
   }
 }

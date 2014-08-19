@@ -15,7 +15,11 @@ exports.reporter = function (errors, results) {
     return stayNumberWang;
   }
 
-  buffer += '[JSHint: ' + results[0].file + ']\n\n';
+  if (results && results[0] && results[0].file) {
+    buffer += '[JSHint: ' + results[0].file + ']\n\n';
+  } else {
+    buffer += '[JSX Transform]\n\n';
+  }
 
   if (errors.length) {
     if (errors.length > 1) {
