@@ -14,7 +14,7 @@ class JshintCommand(sublime_plugin.TextCommand):
                 jshint_exe,
                 filepath,
                 "--reporter",
-                os.path.join(packages, "sublime-jshint", "reporter.js")
+                os.path.join(packages, "JSHint", "reporter.js")
             ],
             "file_regex": r"JSHint: (.+)\]",
             "line_regex": r"(\d+),(\d+): (.*)$"

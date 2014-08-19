@@ -30,7 +30,7 @@
                             {
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/sublime-jshint/Base File.sublime-settings"
+                                    "file": "${packages}/JSHint/Base File.sublime-settings"
                                 },
                                 "caption": "Settings – Default"
                             },
