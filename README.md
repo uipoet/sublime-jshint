@@ -6,7 +6,7 @@ The best JavaScript syntax checker: [JSHint](http://www.jshint.com/) for the bes
 
 **Prerequisites:** [jshint](https://github.com/jshint/jshint) and [Sublime Package Control](http://wbond.net/sublime_packages/package_control/installation)
 
-**Mac OS X:** Installing node with homebrew or macports is assumed. The path to jshint is hardcoded in this plugin as `/usr/local/share/npm/bin:/usr/local/bin:/opt/local/bin`. There is no reliable way to get the path from your environment.
+**Mac OS X:** Installing node with homebrew or macports is assumed. Use [SublimeFixMacPath](https://github.com/int3h/SublimeFixMacPath) for setting the correct OS X path. Supports [nvm - Node Version Manager](https://github.com/creationix/nvm)
 
 **Linux:** Make sure jshint is in your environment path.
 
