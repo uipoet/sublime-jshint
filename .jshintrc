@@ -5,7 +5,7 @@
   "curly": true,
   "eqeqeq": true,
   "eqnull": false,
-  "es5": true,
+  "esversion": 5,
   "evil": false,
   "expr": false,
   "forin": true,
