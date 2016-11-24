@@ -1,6 +1,5 @@
 [{
   "caption": "Tools",
-  "mnemonic": "t",
   "id": "tools",
   "children": [{
     "id": "jshint",
