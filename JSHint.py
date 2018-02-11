@@ -6,11 +6,12 @@ import sublime_plugin
 
 class JshintCommand(sublime_plugin.TextCommand):
     def run(self, edit):
+        jshint_exe = self.view.settings().get('jshint_bin', 'jshint')
         filepath = self.view.file_name()
         packages = sublime.packages_path()
         args = {
             "cmd": [
-                "jshint",
+                jshint_exe,
                 filepath,
                 "--reporter",
                 os.path.join(packages, "JSHint", "reporter.js")
