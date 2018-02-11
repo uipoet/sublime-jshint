@@ -23,10 +23,11 @@ exports.reporter = function (errors, results) {
     }
 
     errors.forEach(function (result) {
-      var
-        error = result.error;
+      var error = result.error,
+          code = (error.code) ? ' (' + error.code + ')' : '';
 
-      buffer += numberWang((error.line + error.character.toString()).length) + ' ' + error.line + ',' + error.character + ':' + ' ' + error.reason + '\n';
+      buffer += numberWang((error.line + error.character.toString()).length) + ' ' + error.line + ',' + error.character + ':' + ' ' + error.reason + code + '\n';
+      
     });
 
     buffer += '\n✗ ' + errors.length + ' ' + title + ', double-click above, [F4] for next, [shift-F4] for previous.\n';
