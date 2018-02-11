@@ -6,10 +6,6 @@
   "file_regex": "JSHint: (.+)\\]",
   "line_regex": "(\\d+),(\\d+): (.*)$",
 
-  "osx": {
-    "path": "/usr/local/share/npm/bin:/usr/local/bin:/opt/local/bin"
-  },
-
   "windows": {
     "cmd": ["jshint.cmd", "$file", "--reporter", "$packages\\JSHint\\reporter.js"]
   }
